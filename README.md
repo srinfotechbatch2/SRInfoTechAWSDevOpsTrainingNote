@@ -86,7 +86,11 @@ go to link --https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out
 
 Enter Email & password ,Username click continue ---Account will create successfully image
 
-![image](https://github.com/user-attachments/assets/f0e311c5-629f-4e53-bf3a-3edee944eeff)
+
+![image](https://github.com/user-attachments/assets/4f0bd13c-21df-42f0-9ad0-e4671b367cfb)
+
+
+![image](https://github.com/user-attachments/assets/44333ed2-0d4a-41b2-9bb5-66c7c5456551)
 
 
 Github::Github is a one of the SCM(Source code management) tool and store the Project code.
@@ -95,21 +99,47 @@ Repository: storage area of your source code. Create a Repository on GitHub
 
 click Repositories
 
-Enter Repository Name::
+![image](https://github.com/user-attachments/assets/725cdcfb-7472-46d8-b7a8-46de06f3cbf6)
 
-![image](https://github.com/user-attachments/assets/a6d6c3c8-8814-45b3-8c39-994e6546470d)
+
+Click New
+
+![image](https://github.com/user-attachments/assets/e9a689f5-7c6e-4b7f-9442-96d8a17021f5)
+
+
+Enter Repository Name::SRINFOTECHDEMO
+
+![image](https://github.com/user-attachments/assets/f230a5b0-b1b4-4b46-8def-ebd601347749)
+
 
 Public:: Anyone on the internet can see this repository.
 
+
+![image](https://github.com/user-attachments/assets/9fb81a79-9cc9-4428-96cd-c9bd3d17e37b)
+
+
 Private:: You choose who can see and commit to this repository.
+
+select Add a README file 
+
+
+![image](https://github.com/user-attachments/assets/4ba5ac39-6736-412c-906d-ebed138f8a86)
+
 
 Click Create Repository
 
-![image](https://github.com/user-attachments/assets/c592782f-e429-43bb-a064-fbbe24d30c41)
+
+![image](https://github.com/user-attachments/assets/6a91de9f-a2f3-4b03-9740-a870bf2cb972)
+
+
+
 
 Repository Created SUccessfully with Default branch main
 
-![image](https://github.com/user-attachments/assets/bb4deaf9-ff56-473a-b3e6-46ac0346883e)
+
+![image](https://github.com/user-attachments/assets/f3435b4a-cf60-4a3a-ba92-eb5a5a4ca02d)
+
+
 
 
 
