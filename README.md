@@ -153,3 +153,439 @@ GitHub uses Git, a distributed version control system, to track changes in code.
 
 Repositories::: where you can store your project files and track the history of changes made to those files.Public and private repos can be created depending on accessibility needs.
 
+
+
+16/06/2025::
+=============
+
+Git & Github Integration::
+=======================
+
+git and github communication happend via SSH keys
+
+![image](https://github.com/user-attachments/assets/805b0fae-f387-47cb-a5d0-b66d474967dd)
+
+Generate SSHKeys::
+====================
+ open gitbash and run the below command
+
+ ![image](https://github.com/user-attachments/assets/0e42b0cc-0ee2-4cac-8cb9-dbbcbe23189a)
+
+
+syntax::ssh-keygen -t ed25519 -C "your_email@example.com"
+
+>ssh-keygen -t ed25519 -C "srinfotechbatch2@gmail.com"
+
+![image](https://github.com/user-attachments/assets/b802d3d8-d678-425e-9bcf-1a8e59dfa35b)
+
+HP@DESKTOP-E518Q66 MINGW64 ~
+$ ssh-keygen -t ed25519 -C "srinfotechbatch2@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/HP/.ssh/id_ed25519):
+/c/Users/HP/.ssh/id_ed25519 already exists.
+Overwrite (y/n)? y
+Enter passphrase for "/c/Users/HP/.ssh/id_ed25519" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/HP/.ssh/id_ed25519
+Your public key has been saved in /c/Users/HP/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:CqROf7Z/FpbjGWy8/vMYGCS6Uq1ttFi/dKY2iAuBprg srinfotechbatch2@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|                 |
+|    .   . .      |
+|   +   o o       |
+|  = o o So..     |
+|.= . + O oXo     |
+|o . + B.+=+*+    |
+| .   =.o..O=.o   |
+|E     oo.=+ooo.  |
++----[SHA256]-----+
+
+
+Please follow below links for more understanding::
+===================================================
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+Once genearted the keys (public/private) and copy public key to Github Account::
+================================================================================
+
+steps::
+
+Your public key has been saved in /c/Users/HP/.ssh/id_ed25519.pub
+
+
+![image](https://github.com/user-attachments/assets/3655eb5a-3b08-4644-98b2-cea22ecfaacd)
+
+right click and open id_ed25519.pub, and copy public key to Github Account
+
+Go to -->Your Copilot OR settings, click your copilot
+
+
+![image](https://github.com/user-attachments/assets/ac133e40-b38c-4483-bfbb-fde5d729747d)
+
+
+Click SSH and GPG Keys
+
+![image](https://github.com/user-attachments/assets/bde7e964-cbbe-42d1-aced-a1646d6bf5d3)
+
+
+click New SSH Key
+
+
+![image](https://github.com/user-attachments/assets/f2996ed0-5afc-494c-a45f-eebc5b78b8e4)
+
+
+Add new SSH Key and click Add SSH Key
+
+![image](https://github.com/user-attachments/assets/1b229cda-b319-4565-b937-7a259dbd2f2a)
+
+
+ssh public key is added in github account
+
+
+![image](https://github.com/user-attachments/assets/1a327a82-3df8-41ea-994b-cc9aa20dd582)
+
+
+
+Clone repository/Project from github to local machine steps::
+==================================================================
+
+Fork::
+============
+
+Fork means to make a copy of the repository into my own github account A fork is a copy of a repository
+
+
+first we need to create the repository
+
+Go to Repositories
+
+![image](https://github.com/user-attachments/assets/c295c1cb-8690-49db-93cf-766d695d0526)
+
+Click New
+
+![image](https://github.com/user-attachments/assets/c0ba9848-bb5c-461e-8f9b-c1cd332ab5dd)
+
+Enter Repository Name
+
+![image](https://github.com/user-attachments/assets/cd6ae1c3-6160-4a5e-a159-5347469fb1b6)
+
+
+select public
+
+select Readmefile.md
+
+![image](https://github.com/user-attachments/assets/e631f9a4-eda5-4e93-8f31-629cda9e6d17)
+
+Click Create Repository
+
+
+Empty repository Created
+
+![image](https://github.com/user-attachments/assets/a838f321-7d0a-46a8-bc1c-e90d12ba5acf)
+
+
+Now I'm Going to clone the Empty Repository from Remote to Local::
+====================================================================
+Steps::
+=======
+
+
+
+1.git clone git@github.com:srinfotechbatch2/SRINfotechDemo.git
+
+2.cd SRINfotechDemo
+
+3.git status
+
+4.git add --all
+
+5.git status
+
+6.git commit -m "i have added hellow world project files"
+
+7.git push   ---->from local changes pushed to remote
+
+8.git pull   --->remote to local
+
+above steps to push some changes from Local to remote repository
+
+Create New Branch::
+==============
+
+![image](https://github.com/user-attachments/assets/7d0f763e-da1f-4ce6-bb96-009f9bf83865)
+
+
+Go to Repositories 
+
+Click Branch
+
+![image](https://github.com/user-attachments/assets/3a29d487-f8f9-4c36-8a22-674203b9a564)
+
+
+Click New Branch
+
+![image](https://github.com/user-attachments/assets/2538e705-3ff3-4cb3-8644-cd3a8ff8e65e)
+
+
+New feature Branch Formate----> feature/YYYY.MM.DD
+
+feature/2025.06.22
+
+![image](https://github.com/user-attachments/assets/2b55ea32-030c-45d2-becd-d94b047515c1)
+
+
+Branch Created Successfully
+
+
+![image](https://github.com/user-attachments/assets/3b5a575e-2c0d-4f81-8b19-1444780514c7)
+
+once branch created in github , we need to pull the new branch from Remote to Local
+
+> git pull
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (main)
+$ git pull
+From github.com:srinfotechbatch2/SRINfotechDemo
+ * [new branch]      feature/2025.06.22 -> origin/feature/2025.06.22
+Already up to date.
+
+Switch one branch to another branch using git checkout command
+
+>git checkout <branchName>
+
+>git checkout feature/2025.06.22
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (main)
+$ git checkout feature/2025.06.22
+branch 'feature/2025.06.22' set up to track 'origin/feature/2025.06.22'.
+Switched to a new branch 'feature/2025.06.22'
+
+please make some changes in source code like Jenkinsfile and try to push changes to github repository, please follow below steps
+
+1.git status
+
+2.git add --all
+
+3.git status
+
+4.git commit -m "i have added hellow world project files"
+
+5.git push
+
+
+
+Lab Practice::
+==================
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps
+$ git clone git@github.com:srinfotechbatch2/SRINfotechDemo.git
+Cloning into 'SRINfotechDemo'...
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps
+$ cd SRINfotechDemo/
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        .whitesource
+        Jenkinsfile
+        pom.xml
+        src/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (main)
+$ git add --all
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.whitesource', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Jenkinsfile', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pom.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/hello/Greeter.java', LF will be replaced by CRLF the next time G
+it touches it
+warning: in the working copy of 'src/main/java/hello/HelloWorld.java', LF will be replaced by CRLF the next tim
+e Git touches it
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   .whitesource
+        new file:   Jenkinsfile
+        modified:   README.md
+        new file:   pom.xml
+        new file:   src/main/java/hello/Greeter.java
+        new file:   src/main/java/hello/HelloWorld.java
+
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (main)
+$ git commit -m "i have added hello world project files"
+[main 2f04570] i have added hello world project files
+ 7 files changed, 367 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore
+ create mode 100644 .whitesource
+ create mode 100644 Jenkinsfile
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/hello/Greeter.java
+ create mode 100644 src/main/java/hello/HelloWorld.java
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (main)
+$ git push
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (13/13), 5.42 KiB | 793.00 KiB/s, done.
+Total 13 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:srinfotechbatch2/SRINfotechDemo.git
+   03b032f..2f04570  main -> main
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (main)
+$ git pull
+From github.com:srinfotechbatch2/SRINfotechDemo
+ * [new branch]      feature/2025.06.22 -> origin/feature/2025.06.22
+Already up to date.
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (main)
+$ git checkout feature/2025.06.22
+branch 'feature/2025.06.22' set up to track 'origin/feature/2025.06.22'.
+Switched to a new branch 'feature/2025.06.22'
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (feature/2025.06.22)
+$ git status
+On branch feature/2025.06.22
+Your branch is up to date with 'origin/feature/2025.06.22'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Jenkinsfile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (feature/2025.06.22)
+$ git add --all
+warning: in the working copy of 'Jenkinsfile', LF will be replaced by CRLF the next time Git touches it
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (feature/2025.06.22)
+$ git commit -m "modified jenkinsfile"
+[feature/2025.06.22 9bb0cbe] modified jenkinsfile
+ 1 file changed, 13 deletions(-)
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (feature/2025.06.22)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 290 bytes | 145.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:srinfotechbatch2/SRINfotechDemo.git
+   2f04570..9bb0cbe  feature/2025.06.22 -> feature/2025.06.22
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (feature/2025.06.22)
+$ git status
+On branch feature/2025.06.22
+Your branch is up to date with 'origin/feature/2025.06.22'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Jenkinsfile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (feature/2025.06.22)
+$ git add --all
+warning: in the working copy of 'Jenkinsfile', LF will be replaced by CRLF the next time Git touches it
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (feature/2025.06.22)
+$ git commit -m "modified jenkinsfile"
+[feature/2025.06.22 aff43d0] modified jenkinsfile
+ 1 file changed, 13 insertions(+)
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (feature/2025.06.22)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 527 bytes | 263.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:srinfotechbatch2/SRINfotechDemo.git
+   9bb0cbe..aff43d0  feature/2025.06.22 -> feature/2025.06.22
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (feature/2025.06.22)
+$ git status
+On branch feature/2025.06.22
+Your branch is up to date with 'origin/feature/2025.06.22'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Jenkinsfile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (feature/2025.06.22)
+$ git add --all
+warning: in the working copy of 'Jenkinsfile', LF will be replaced by CRLF the next time Git touches it
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (feature/2025.06.22)
+$ git status
+On branch feature/2025.06.22
+Your branch is up to date with 'origin/feature/2025.06.22'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Jenkinsfile
+
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (feature/2025.06.22)
+$ git commit -m "modified jenkinsfile"
+[feature/2025.06.22 41147f7] modified jenkinsfile
+ 1 file changed, 1 insertion(+), 12 deletions(-)
+
+HP@DESKTOP-E518Q66 MINGW64 ~/OneDrive/Documents/SR InfoTech/AWS DevOps/SRINfotechDemo (feature/2025.06.22)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 291 bytes | 291.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:srinfotechbatch2/SRINfotechDemo.git
+   aff43d0..41147f7  feature/2025.06.22 -> feature/2025.06.22
+
+
