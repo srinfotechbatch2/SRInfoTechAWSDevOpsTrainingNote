@@ -599,7 +599,6 @@ Github Branching Model::
 
 A GitHub branching model is a structured way of organizing branches in a Git repository to manage development workflows effectively. It helps teams work collaboratively, isolate features, manage releases, and deploy code more efficiently.
 
-![image](https://github.com/user-attachments/assets/2b5b48a9-9236-444e-a990-b512bc5ff581)
 
 ![image](https://github.com/user-attachments/assets/2b5b48a9-9236-444e-a990-b512bc5ff581)
 
@@ -631,5 +630,67 @@ hotfix branch:: always created from main or master branch only for production fi
 always created this hotfix branch for production issues fixes
 
 bugfix:: this branch is created from release branch to fix the LLE(lower level environemnt)/Pre-Prod/UAT/Non-Prod issues and once LLE issues fixed ,we should pushed their changes to release branch only.
+
+
+Raise PR (Pull Request) ::
+=========================
+Merge the code from one branch to another branch that is called pull request
+
+below are the steps to raise PR::
+
+Go to -->Pull requests and click
+
+![image](https://github.com/user-attachments/assets/f2848a77-e095-4f56-917c-af9105d1e0bb)
+
+Click New Pull Request::
+
+![image](https://github.com/user-attachments/assets/1369f202-d7fd-4279-ac9d-b4b2eb7702ed)
+
+Compare & pull Request
+
+![image](https://github.com/user-attachments/assets/bac984dd-12b1-4cf0-b00d-e5b49db165f6)
+
+select base & compare options
+
+![image](https://github.com/user-attachments/assets/13e46ee9-db46-4eb0-a505-e4580e4a92ff)
+
+
+Raise PR(Pull Request) from feature to release branch
+
+
+![image](https://github.com/user-attachments/assets/e4e939a3-a286-4264-a51d-3c1c7df59be4)
+
+
+please select base & compare branches so here base branch is release/2025.06.29 and compare branch is feature/2025.06.22
+
+i'm going to merge code changes from feature branch to release branch 
+
+
+
+![image](https://github.com/user-attachments/assets/15c01632-b97a-4ede-bb55-2ef0bcea5105)
+
+
+click create pull request
+
+![image](https://github.com/user-attachments/assets/6b91e62d-9aee-4328-b759-bd20ec6f2a1d)
+
+![image](https://github.com/user-attachments/assets/60876946-a09b-4245-bc4b-835bff15fe87)
+
+click merge request
+
+confirm merge
+
+![image](https://github.com/user-attachments/assets/3ae9c358-accc-4a73-92c5-4aa21b2d78c4)
+
+
+merged 1 commit into release/2025.06.29 from feature/2025.06.22  Copied!
+
+![image](https://github.com/user-attachments/assets/fc0f68b5-b263-4267-ad07-0ea7a2bcf026)
+
+
+
+
+
+
 
 
