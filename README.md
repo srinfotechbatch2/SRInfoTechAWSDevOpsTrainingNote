@@ -729,9 +729,13 @@ resolved conflicts::
 opend the editor
 
 1.presh the i from your keyboard
+
 2.esc
+
 3.swift+:
+
 4.wq
+
 5.enter
 
 Developer1 Activity::
@@ -850,5 +854,46 @@ To github.com:parasa7358/spring-petclinic.git
    Please be practice above 3 developers activity in real time bases 
 
 >git fetch--->just fetch
+
 >git pull -->fetch+merged
 
+
+Git All the Commands::
+==========================
+
+Git commands::
+==============
+1.git clone git@github.com:srinfotechbatch2/SRINfotechDemo.git
+
+2.cd SRINfotechDemo
+
+3.git status
+
+4.git add --all
+
+5.git status
+
+6.git commit -m "i have added hellow world project files"
+
+7.git push   ---->from local changes pushed to remote
+
+8.git pull   --->remote to local
+
+9.git checkout <branchname>
+
+   git checkout feature/2025.06.22
+   
+10.git pull  --->every devlioper beforre pushing their changes we should make sure git pull the every time   
+  
+
+clone      Clone a repository into a new directory
+
+add        Add files
+
+status     Show the working tree status
+
+commit     Record changes to the repository
+
+ pull       Fetch from and integrate with another repository or a local branch
+ 
+ push       Update remote refs along with associated objects
