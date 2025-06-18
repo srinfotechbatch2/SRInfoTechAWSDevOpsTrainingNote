@@ -693,8 +693,162 @@ merged 1 commit into release/2025.06.29 from feature/2025.06.22  Copied!
 
 
 
+18/06/2025::
+==================
+
+
+Avoide conflicts in RealTime Scenarious::
+=================
+
+If multiple developers OR DevOps Engineers are working on same Project/MOdules, if they tried to commits thier code changes to Repository, it will faces the  conflicts issues and how to resolved those conflicts issues in real time projects 
+
+
+![image](https://github.com/user-attachments/assets/f2ebe341-83c5-486d-ba0d-329854190105)
 
 
 
+>git pull --->git pull command is use, copies changes from a remote repository directly into your working directory (local directory) and merged code changes from remote repository to local repository 
+>git fetch ---->The git fetch command only fetch the changes into your local Git repo and it will not merged anything. just fetch the details
 
+Please create developer1,developer2,developer3 directories in your local machine and clone the project code separately 
+
+![image](https://github.com/user-attachments/assets/a0345422-a025-4c3a-84c5-737b98244a6a)
+
+
+![image](https://github.com/user-attachments/assets/3296003f-c8c7-42c8-bdca-3270576aaa57)
+
+
+![image](https://github.com/user-attachments/assets/7e786310-5092-4975-9eb9-7b18801353d8)
+
+Editor steps for Resolved the conflicts::
+
+resolved conflicts::
+
+>git pull
+
+opend the editor
+
+1.presh the i from your keyboard
+2.esc
+3.swift+:
+4.wq
+5.enter
+
+Developer1 Activity::
+=====================
+
+ git checkout feature/2025.02.27
+error: pathspec 'feature/2025.02.27' did not match any file(s) known to git
+
+HP@DESKTOP-E518Q66 MINGW64 ~/Desktop/A/spring-petclinic (main)
+$ git pull
+From github.com:parasa7358/spring-petclinic
+ * [new branch]      feature/2025.02.27 -> origin/feature/2025.02.27
+Already up to date.
+
+HP@DESKTOP-E518Q66 MINGW64 ~/Desktop/A/spring-petclinic (main)
+$ git checkout feature/2025.02.27
+branch 'feature/2025.02.27' set up to track 'origin/feature/2025.02.27'.
+Switched to a new branch 'feature/2025.02.27'
+
+HP@DESKTOP-E518Q66 MINGW64 ~/Desktop/A/spring-petclinic (feature/2025.02.27)
+$ git status
+On branch feature/2025.02.27
+Your branch is up to date with 'origin/feature/2025.02.27'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Jenkinsfile
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@DESKTOP-E518Q66 MINGW64 ~/Desktop/A/spring-petclinic (feature/2025.02.27)
+$ git add --all
+warning: in the working copy of 'Jenkinsfile', LF will be replaced by CRLF the next time Git touches it
+
+HP@DESKTOP-E518Q66 MINGW64 ~/Desktop/A/spring-petclinic (feature/2025.02.27)
+$ git status
+On branch feature/2025.02.27
+Your branch is up to date with 'origin/feature/2025.02.27'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Jenkinsfile
+
+
+HP@DESKTOP-E518Q66 MINGW64 ~/Desktop/A/spring-petclinic (feature/2025.02.27)
+$ git commit -m "Added jenkins file for Feb Release"
+[feature/2025.02.27 9ad4ee0] Added jenkins file for Feb Release
+ 1 file changed, 22 insertions(+)
+ create mode 100644 Jenkinsfile
+
+HP@DESKTOP-E518Q66 MINGW64 ~/Desktop/A/spring-petclinic (feature/2025.02.27)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 483 bytes | 241.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:parasa7358/spring-petclinic.git
+   e4b9aa2..9ad4ee0  feature/2025.02.27 -> feature/2025.02.27
+
+
+Developer2  Activity::
+=========================
+
+HP@DESKTOP-E518Q66 MINGW64 ~/Desktop/B/spring-petclinic (feature/2025.02.27)
+$ git pull
+Already up to date.
+
+HP@DESKTOP-E518Q66 MINGW64 ~/Desktop/B/spring-petclinic (feature/2025.02.27)
+$ git status
+On branch feature/2025.02.27
+Your branch is ahead of 'origin/feature/2025.02.27' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+HP@DESKTOP-E518Q66 MINGW64 ~/Desktop/B/spring-petclinic (feature/2025.02.27)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 586 bytes | 293.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To github.com:parasa7358/spring-petclinic.git
+   9ad4ee0..ed57c5e  feature/2025.02.27 -> feature/2025.02.27
+
+
+Developer3  Activity::
+========================
+
+HP@DESKTOP-E518Q66 MINGW64 ~/Desktop/C/spring-petclinic (feature/2025.02.27)
+$ git status
+On branch feature/2025.02.27
+Your branch is ahead of 'origin/feature/2025.02.27' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+HP@DESKTOP-E518Q66 MINGW64 ~/Desktop/C/spring-petclinic (feature/2025.02.27)
+$ git push
+Enumerating objects: 33, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (13/13), 1.14 KiB | 233.00 KiB/s, done.
+Total 13 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To github.com:parasa7358/spring-petclinic.git
+   ed57c5e..80681f1  feature
+
+
+   Please be practice above 3 developers activity in real time bases 
+
+>git fetch--->just fetch
+>git pull -->fetch+merged
 
