@@ -1,3 +1,4 @@
+
 # SRInfoTechAWSDevOpsTrainingNote
 
 
@@ -897,3 +898,178 @@ commit     Record changes to the repository
  pull       Fetch from and integrate with another repository or a local branch
  
  push       Update remote refs along with associated objects
+
+
+
+19/06/2025::
+==================
+
+
+1.install git
+2.introcuction about git-->VCS
+3.github-->SCM
+4.introduction about github
+5.github account
+6.create repositories
+7.integarte git & github via SSH keys--->ssh-keygen -t ed25519
+8.how to created branch in github
+9.how to rasie PR-->pull requests--->feature branch to release
+10.
+git commands::
+
+1.git clone
+2.cd 
+3.git checkout 
+4.git status
+5.git add -all
+6.git commit
+7.git push
+8.git pull
+9.git fetch
+10.
+>git pull
+
+opend the editor
+
+1.presh the i from your keyboard
+2.esc
+3.swift+:
+4.wq
+5.enter
+
+10.how to resolved the git conflicts
+11.github branching model/stargety
+12.end to end flow of git & github
+
+
+Jenkins Introductiion::
+============================
+Jenkins is a free and open source automation server/tool. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery.
+
+Jenkins is a Orchestration tool
+
+Jenkins is a CI/CD tool
+
+Jenkins is a Schedular
+
+Jenkins is a crone job schedular
+
+
+![image](https://github.com/user-attachments/assets/bf52c5e8-bdc3-473a-acfe-9d78f9e05257)
+
+![image](https://github.com/user-attachments/assets/8f101b62-5313-47c2-a870-56483b7ad68f)
+
+Roles And Responsibilities::
+================================
+1)The devops engineer was responsibility to release the product to the market as soon as possible 
+2)release the product speed to the market 
+3)Devops engineer was give continues feedback to the developers 4) Devops engineer responsibility start from git and end with production
+
+A) when your activity start from git and end with production environment(production servers)Continues deployment 
+when your activity start from git to LLE(lower level environment,testing environment,pre-prod…et) environment(pre-production servers)Continues delivery non-production environment
+
+Tutorials::
+
+https://www.tutorialspoint.com/jenkins/jenkins_overview.htm https://www.geeksforgeeks.org/jenkins-tutorial/#prerequisites
+
+Download JDK 17 ::
+
+https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+
+Windows x64 Installer 153.92 MB
+
+Windows x64 Compressed Archive	172.87 MB	
+https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.zip (sha256 )
+
+JDK 17 Environment setup::
+==============================
+
+Go to Search box & type Edit the system environemnt variables and click
+
+It will navigate to System properties
+
+![image](https://github.com/user-attachments/assets/2de9b257-9029-43f7-af30-4f4f4827731a)
+
+Click Environment Variables
+
+
+![image](https://github.com/user-attachments/assets/0b02d209-cb85-4afd-869f-923df054b7de)
+
+![image](https://github.com/user-attachments/assets/88adc878-dedd-4150-9ee8-f01c75677ab2)
+
+User variables::
+================
+
+![image](https://github.com/user-attachments/assets/d6bfe193-6a5c-4a8b-a21a-fa77c07a4bbc)
+
+Click New
+
+Variable Name:: JAVA_HOME
+
+Variable Value:: C:\Users\HP\Downloads\jdk-17.0.12_windows-x64_bin\jdk-17.0.12
+
+![image](https://github.com/user-attachments/assets/5743966a-8e88-4502-bd3a-904f1a839a01)
+
+Click OK
+
+![image](https://github.com/user-attachments/assets/1af67329-3601-4e23-855e-b69cf5763d95)
+
+
+System variable::
+=================
+
+![image](https://github.com/user-attachments/assets/0cecde24-19be-4989-98c5-c3eb9c20734c)
+
+Edit Path
+
+![image](https://github.com/user-attachments/assets/5f302184-84cb-4e66-b17a-3ce4792fa45c)
+
+Click New and give Java Installed path till \bin
+
+C:\Users\HP\Downloads\jdk-17.0.12_windows-x64_bin\jdk-17.0.12\bin
+
+![image](https://github.com/user-attachments/assets/d918df00-9c10-424f-b155-7a22e925d291)
+
+Click OK
+
+You Can verify Java is Installed Or Not
+
+Go to command Prompt
+
+![image](https://github.com/user-attachments/assets/773f6318-d8a5-4d2c-803b-e504d84e24e1)
+
+![image](https://github.com/user-attachments/assets/aee76eab-4f27-4fce-af69-f28a872d37dc)
+
+
+>java --version
+
+C:\Users\HP>java --version
+java 17.0.12 2024-07-16 LTS
+Java(TM) SE Runtime Environment (build 17.0.12+8-LTS-286)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.12+8-LTS-286, mixed mode, sharing)
+
+![image](https://github.com/user-attachments/assets/92e49e72-2f7c-464c-b8f1-2a30e6ebe702)
+
+Above Screeenshot JDK17 setup is done
+
+
+
+
+Installed jenkins in Windows::
+================================
+
+https://www.jenkins.io/download/
+
+Go to google search -->download jenkins war file for windows
+
+click below Jenkins version
+
+Download Jenkins 2.515 for:
+
+![image](https://github.com/user-attachments/assets/eaac3392-c1ce-498f-8a85-7a5fecabeb6b)
+
+Jenkins.war file is downloaded
+
+![image](https://github.com/user-attachments/assets/70e676a4-9a05-4748-b8d5-2373bf8ac189)
+
+
