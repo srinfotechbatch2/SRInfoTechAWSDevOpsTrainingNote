@@ -1194,6 +1194,8 @@ Go to command Prompt
 ![image](https://github.com/user-attachments/assets/93472b9c-b6b0-4bd4-acac-41d28e2031d9)
 
 C:\Users\HP>mvn -v
+
+
 Apache Maven 3.9.10 (5f519b97e944483d878815739f519b2eade0a91d)
 Maven home: C:\Users\HP\Downloads\apache-maven-3.9.10
 Java version: 17.0.12, vendor: Oracle Corporation, runtime: C:\Users\HP\Downloads\jdk-17.0.12_windows-x64_bin\jdk-17.0.12
