@@ -1371,3 +1371,92 @@ Success Builds
 
 
 
+
+23/06/2025::
+=================
+
+Poll SCM ::Jenkins server ask git if there is any changes in git server or not, if changes there Jenkins server build/package the changes , every change build happened like 5 mints ,means every 5 minutes verify the Jenkins server to git if there is any changes 
+
+![image](https://github.com/user-attachments/assets/0c4e554e-e2b4-4894-a99a-5848552cc084)
+
+POLL SCM ----* * * * * --every minute when every commit 
+
+Create one sample POLL SCM jenkins job::
+===========================================
+Go to jenkins Dashboard
+click New Item
+
+![image](https://github.com/user-attachments/assets/1c62657f-935b-4eed-b032-08842fb09a57)
+
+Description
+
+![image](https://github.com/user-attachments/assets/3a54ba69-b2aa-4443-ad9b-d18ab5fbde02)
+
+
+Provide the Git URL
+
+Onlinebookstore Project::
+=========================
+
+https://github.com/srinfotechbatch2/onlinebookstore.git
+
+
+![image](https://github.com/user-attachments/assets/1fb7b83f-3bba-411b-aad9-a725f25d3e1c)
+
+
+Branch buiild
+
+![image](https://github.com/user-attachments/assets/71aec8f1-4783-4e97-97cb-232dd18811ae)
+
+POLL SCM:: * * * * *
+
+every minute build was trigger when new commits happend in github repository
+
+![image](https://github.com/user-attachments/assets/d6ab7a34-156a-4430-9d40-31e362ad23b1)
+
+
+Build Steps::
+
+![image](https://github.com/user-attachments/assets/4aae78af-d217-41de-a1e6-16bfe2e34472)
+
+Once New Commits Happend in Github , Automatically Build is triggered in The Jenkins Server this Called CI (Continuous Integration)
+
+Check Your Workspace::
+========================== once build success we can bale to see the /target folder under the Workspace
+
+![image](https://github.com/user-attachments/assets/d860064f-6f5f-4ef2-aa93-363bf45e47c5)
+
+1.To check a job's workspace:
+
+2.Navigate to the job in the Jenkins UI.
+
+3.Click on "Workspace" in the left sidebar.
+
+![image](https://github.com/user-attachments/assets/f5ab670a-e7aa-4372-bbea-c3a1c130fe3a)
+
+Under Target Folder we can able to see the all .ear/war/jar/zip Artifacts Formates
+
+![image](https://github.com/user-attachments/assets/369fe791-fb6e-4a59-8fb1-99a14df190c3)
+
+
+PLease try to execute the Project with below Maven Goals and see the difference 
+
+
+Common Maven Commands OR Maven Goals::
+======================================
+
+https://github.com/srinfotechbatch2/onlinebookstore.git
+https://github.com/srinfotechbatch2/spring-petclinic.git
+
+1) mvn clean	  ------------> Deletes target/ directory (clean build).
+
+2) mvn compile	-----------> Compiles the source code.
+   
+3) mvn test	   ------------> Runs tests.
+   
+4) mvn package	------------> Creates a JAR/WAR.
+  
+5) mvn install	------------> Installs package into your local repository.
+  
+6) mvn deploy	-------------> Deploys package to a remote repository.
+
