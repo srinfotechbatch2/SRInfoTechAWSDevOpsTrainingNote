@@ -1386,6 +1386,11 @@ Poll SCM ::Jenkins server ask git if there is any changes in git server or not, 
 
 POLL SCM ----* * * * * --every minute when every commit 
 
+Chrone JObs Formate LInk::
+=============================
+
+https://crontab.guru/examples.html
+
 
 Create one sample POLL SCM jenkins job::
 ===========================================
