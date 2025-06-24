@@ -1438,7 +1438,7 @@ Select Invoke top-level Maven targets
 
 ![image](https://github.com/user-attachments/assets/8a818614-ba02-45d5-a98d-8d94adbe68f7)
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/20a1d9cd-1412-41fa-8f6e-62e94024f936)
 
 
 Once New Commits Happend in Github , Automatically Build is triggered in The Jenkins Server this Called CI (Continuous Integration)
@@ -1491,4 +1491,131 @@ https://github.com/srinfotechbatch2/spring-petclinic.git
 5) mvn install	------------> Installs package into your local repository.
   
 6) mvn deploy	-------------> Deploys package to a remote repository.
+
+
+
+
+24/06/2025::
+===================
+
+
+
+![image](https://github.com/user-attachments/assets/f204a3a2-d9ac-45fd-8497-e71d0c8bf82b)
+
+Poll SCM ::
+================
+
+Jenkins server ask git if there is any changes in git server or not, if changes there Jenkins server build/package the changes , every change build happened like 5 mints ,means every 5 minutes verify the Jenkins server to git if there is any changes 
+
+![image](https://github.com/user-attachments/assets/6f436ad6-e92a-40e3-831a-23219c288217)
+
+POLL SCM ----* * * * * --every minute when every commit 
+
+Build Periodically:::	
+============================
+
+H/15 * * * *   ----this build happened every 5 minutes without commits ,if changes are commit or not but every 5 mints build happened in Jenkins 
+
+
+Please create a New Jenkins jobs both POLL SCM & Build Periodically 
+
+https://github.com/srinfotechbatch2/spring-petclinic.git
+https://github.com/srinfotechbatch2/onlinebookstore.git
+
+Automatically Discard Old Builds:::
+==============================
+To automate the process of discarding old builds, you can configure the job’s settings to automatically delete old builds based on criteria such as the number of builds to keep or the age of the builds.
+
+Follow these steps:
+
+Open the Jenkins job (project).
+Click on Configure (on the left-hand side).
+Scroll down to the Build Discarder section (usually under the Build Triggers section).
+Check Discard old builds.
+Specify the following options:
+Max # of builds to keep: Set the maximum number of builds to keep.
+Max days to keep builds: Set the maximum age for builds to keep.
+Save the configuration by clicking Save.
+
+
+![image](https://github.com/user-attachments/assets/8d8c9cf9-988a-41e4-b052-539ef601171f)
+
+
+
+Execute the Jobs in Parallel::
+==============================
+
+
+1.By Default execute the Jenkins build jobs are sequence way,one by one 
+
+2.Don’t do 2 projects build parallel  this is real time scenario but we can do parallel builds as well one job
+
+Jenkins build parallel setup
+
+Go job ---> configure ----> Generall ---> Execute concurrent builds if necessary
+
+
+![image](https://github.com/user-attachments/assets/3216a68f-b10b-44cd-83b5-b62c27525296)
+
+
+![image](https://github.com/user-attachments/assets/909edd87-548d-4ded-a862-29cf850fac05)
+
+
+Here 5 builds execute parallel ,I kept executor is 5 this is same machine 
+
+![image](https://github.com/user-attachments/assets/a840a224-5cbb-43cc-92c1-d135db4ce00f)
+
+
+Build Periodically:::	H/15 * * * *   ----this build happened every 5 minutes without commits ,if changes are commit or not but every 5 mints build happened in Jenkins 
+
+Create Sample Build peridiocally jenkins job::
+=============================================
+
+Description
+
+![image](https://github.com/user-attachments/assets/5ad69478-039e-4ef7-a35f-cb18ed8364f1)
+
+Git url::
+
+![image](https://github.com/user-attachments/assets/b2cbdb7c-14ac-4fae-a240-90cc7a82c78d)
+
+Build the branch
+
+![image](https://github.com/user-attachments/assets/94230c57-b88f-4ab1-b894-151f30fa6d53)
+
+every 5 mints build will trigger
+
+Build Periodically:::	H/15 * * * *   ----this build happened every 5 minutes without commits ,if changes are commit or not but every 5 mints build happened in Jenkins 
+![image](https://github.com/user-attachments/assets/a5321109-944b-4e79-9294-e28c2adfea0d)
+
+click save 
+
+Whenever you configure a build activities :::
+=======================================
+
+SCM::
+
+	Where is your project
+
+Build environment::
+
+---all about your workspace folders 
+
+Build Triggers::
+
+--whenever code changes 
+--periodic
+---script calls 
+
+Build steps::
+
+Dev team will tell ,
+
+Post build::
+
+That aim is giving continue feedback to dev team
+
+--send mails
+--build pass/fail
+--CI
 
