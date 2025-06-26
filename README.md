@@ -1590,32 +1590,13 @@ Build Periodically:::	H/15 * * * *   ----this build happened every 5 minutes wit
 
 click save 
 
-Whenever you configure a build activities :::
-=======================================
 
-SCM::
 
-	Where is your project
 
-Build environment::
 
----all about your workspace folders 
 
-Build Triggers::
 
---whenever code changes 
---periodic
----script calls 
 
-Build steps::
 
-Dev team will tell ,
-
-Post build::
-
-That aim is giving continue feedback to dev team
-
---send mails
---build pass/fail
---CI
-
+![image](https://github.com/user-attachments/assets/b60b42e4-5365-4197-a090-778e1023aba6)
+![image](https://github.com/user-attachments/assets/b60b42e4-5365-4197-a090-778e1023aba6)
