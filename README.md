@@ -1719,6 +1719,9 @@ E-mail Notification
 ![image](https://github.com/user-attachments/assets/dc3dfcd8-1454-434b-a88b-44acf32a3f56)
 
 
+![image](https://github.com/user-attachments/assets/37414d6d-d388-4f21-840e-899b8c3e3bf1)
+
+
 Use SMTP Authentication? –should selected
 
 Use SSL select
@@ -1777,14 +1780,19 @@ In post build Action select the option Archive the artifacts
 
 >target/*.war  OR target/*.jar  OR target/*.zip  OR target/*.ear
 
-![image](https://github.com/user-attachments/assets/39dcf26d-74ee-4c7f-bc28-bb7f6116fedb)
+![image](https://github.com/user-attachments/assets/44f88d03-d9c8-4800-88e2-06217f721d5c)
+
+![image](https://github.com/user-attachments/assets/7ed9efc9-6a45-4eff-a789-0b7fe50c6024)
+
 
 In post build Action select the option Publish JUnit test result report for to published the test results
 
 >target/surefire-reports/*.xml
 
 
-![image](https://github.com/user-attachments/assets/e04f371d-b684-406b-9210-50fb74b6ea79)
+![image](https://github.com/user-attachments/assets/e3c17557-410c-4915-bec3-2ec5edee6526)
+
+
 
 I want to show test results ::
 =================================
@@ -1803,13 +1811,38 @@ Junit test results::
 See test results & antifactory ::
 ===================================
 
-![image](https://github.com/user-attachments/assets/2711b453-072e-40d2-9596-afce8f586310)
+
+![image](https://github.com/user-attachments/assets/819809c2-3611-45e0-abd0-0139b29d166b)
+
+
 
 
 3.For every company will do sequence build on one project this is recommended approach
 
 
 
+General  ---just descriptin
+
+SCM
+
+where is your project--github, bitbucket
+
+Triggere
+
+whenever code changes i want build the project given time
+
+Environmant
+
+--all about workspaces folders
+
+Build Steps
+
+dev team will tell which tool we are using in current project
+
+
+Post Build
+
+devops engineer is aim is given continue feedback to dev team via email notification
 
 
 
