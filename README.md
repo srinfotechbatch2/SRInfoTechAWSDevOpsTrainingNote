@@ -1857,64 +1857,82 @@ Run the same job with different inputs without modifying the configuration manua
 
 Go To New Item
 
-![image](https://github.com/user-attachments/assets/20b1237b-1681-4e77-ad8b-33ee8ac69b97)
+![image](https://github.com/user-attachments/assets/695a7137-6283-462b-8ff7-37ffb4f6ff68)
+
 
 Enter Job Name, Free style project and click ok
 
-![image](https://github.com/user-attachments/assets/106bb57e-5466-4e1d-9ead-c977aaac60e7)
+![image](https://github.com/user-attachments/assets/da12fe42-db98-40e1-af80-1ba335b50596)
+
 
 
 Enter the description
 
-![image](https://github.com/user-attachments/assets/4944c35f-86db-42a4-8bb8-4b3d9987fd81)
+![image](https://github.com/user-attachments/assets/cd3c1d8f-d403-4694-a830-1084796c80ad)
+
 
 Select the option This project is parameterised
 
-![image](https://github.com/user-attachments/assets/4eeab439-3e45-4320-a7de-73360c28c3c3)
+![image](https://github.com/user-attachments/assets/e2fb86d9-ea5b-4981-a3ee-81d4645d06c1)
+
 
 Click Add Parameter
 
-![image](https://github.com/user-attachments/assets/3570dcc9-72a0-4034-8da3-1a70e0341fa7)
+![image](https://github.com/user-attachments/assets/2702952d-1e31-4432-a405-88f509bfc58c)
+
 
 Select optiions String parameter or choise parameter or boolean parameter you can select the ny options based on your requirement 
 
-![image](https://github.com/user-attachments/assets/210ae086-fecf-42b2-9322-966b85431d18)
+![image](https://github.com/user-attachments/assets/1b18b622-c141-4988-bdc3-785359a04e99)
+
 
 select string parameter
 
-![image](https://github.com/user-attachments/assets/aa0b6706-bda8-4de8-a094-d14e4955fc34)
+![image](https://github.com/user-attachments/assets/33215729-9b13-46bf-bbbb-b08416979dd6)
+
 
 Select Choise Parameter
 
-![image](https://github.com/user-attachments/assets/48baed03-fe9c-482b-870b-ba4126eb2b4a)
+![image](https://github.com/user-attachments/assets/59b8db99-1196-4024-9cdf-b3a80a358f81)
+
 
 choise parameter
 
-![image](https://github.com/user-attachments/assets/a50a06a9-5063-4f12-8d10-0f44ee473f46)
+![image](https://github.com/user-attachments/assets/952de313-ebde-4b39-be7b-c31c6b0ca283)
+
 
 Click Save
 
+![image](https://github.com/user-attachments/assets/4f19f2ba-c85b-4adf-9dd0-16da436011dd)
+
+
 You Can observed this project is parameterized 
 
-![image](https://github.com/user-attachments/assets/05be584b-bd82-4f00-89c7-6358a4ca5ca4)
+![image](https://github.com/user-attachments/assets/fef0f526-c9f2-4dec-8d0e-960efc94d09c)
+
 
 Click Build with parameter
 
-![image](https://github.com/user-attachments/assets/a7317486-0b18-4e78-9a64-4113f712a757)
+![image](https://github.com/user-attachments/assets/1cbeb32c-bd23-4d87-87be-8e6d010bb968)
+
 
 select deployment environment
 
-![image](https://github.com/user-attachments/assets/b12a618f-a8da-4c8f-b19c-7b92af2431da)
+![image](https://github.com/user-attachments/assets/af62b4d7-b107-4856-b567-d010efb3a11a)
+
 
 select which versioj you want to deployment like tis you can configured real time parameterized project in jenkins
 
-![image](https://github.com/user-attachments/assets/33a52ced-4fa7-4b69-a0f9-a82fe436cdfd)
+![image](https://github.com/user-attachments/assets/506da743-2efd-4e19-8082-67592c3c24b1)
+
 
 Click Build
 
-![image](https://github.com/user-attachments/assets/7acf8c06-b734-4512-acf7-86ed9fd9053a)
+![image](https://github.com/user-attachments/assets/9554cd4a-ba9a-4821-af2e-638d554632a8)
 
-![image](https://github.com/user-attachments/assets/1cec807a-76cc-4446-a589-4767563b90eb)
+
+![image](https://github.com/user-attachments/assets/28afabd9-1c84-4313-95c6-1ec8bd50488d)
+
 
 
 I want Build a 3 projects ::
