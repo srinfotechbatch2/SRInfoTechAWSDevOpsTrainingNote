@@ -1944,3 +1944,264 @@ I want a build 3 projects ,one project build is success then it will start 2nd p
 
 
 
+
+
+30/06/2025::
+=============
+
+I want Build a 3 projects ::
+===========================
+
+I want a build 3 projects ,one project build is success then it will start 2nd project & once 2nd project build is success then it will start 3rd Project, without manually interventions we need setup these 3 projects configurations.
+
+![image](https://github.com/user-attachments/assets/5d043ea2-97c3-4b8f-8b56-95703e1adf95)
+
+
+
+![image](https://github.com/user-attachments/assets/b2dfde9d-e397-46b8-a8cb-67ab3711b141)
+
+
+Project-A, Projec -B, Projec - C 
+
+Once Project-A build is done, then it will start Project-B build and once Project-B build SUccess then it will start Project-C build ---for this we need to select Add post-build action and select "Build other projects" in drop down and provide Project-B details.
+
+
+![image](https://github.com/user-attachments/assets/048a99bc-bcf6-47ca-9b27-ef23152eab97)
+
+
+Projec A is  (Downstream project is ---Projec B)
+
+Projec B is (UP Stream project is ----Projec A)
+
+Projec C is (downstream project of --Projec B)
+
+i created 3 free style project in jenkins 
+
+Project-A ::
+==============
+
+Github URL::: https://github.com/parasa7358/spring-petclinic.git
+
+![image](https://github.com/user-attachments/assets/e8073061-b815-4945-bd7f-c20b3a6576e2)
+
+
+Post Build Action , select the option Build Other Project  Project-B
+
+
+![image](https://github.com/user-attachments/assets/ef75f777-c273-4255-b063-f9853072dfcb)
+
+Project -B ::
+=============
+
+Github URL:::https://github.com/parasa7358/onlinebookstore.git
+
+
+![image](https://github.com/user-attachments/assets/2ee62e92-e677-4717-93be-77d6dd1ecbf9)
+
+
+Post Build Action , select the option Build Other Project Project-C
+
+
+![image](https://github.com/user-attachments/assets/ec7cfc18-002b-4dc3-8438-a75b12b9a438)
+
+
+Project-C::
+============
+
+
+Github URL:::https://github.com/srinfotechbatch2/devOpsWeb.git
+
+
+Pipelines Introduction:::
+
+A Jenkins pipeline is a series of automated steps or stages that define the process of continuous integration/continuous delivery (CI/CD) for your code. Jenkins, being a popular open-source automation server, uses pipelines to automate tasks like building, testing, and deploying code.
+
+There are two types of Jenkins pipelines:
+
+1. Declarative Pipeline
+2. Scripted Pipeline
+
+1. Declarative Pipeline::
+The declarative pipeline syntax is simpler and more structured. It's the recommended style for most users because it's easy to read and maintain
+
+Create Pipeline Project::
+=======================
+
+Steps
+
+Click +New Item
+
+
+![image](https://github.com/user-attachments/assets/43694be8-ac77-41a1-9d90-30175a91443f)
+
+Enter the Project Name And Click OK
+
+![image](https://github.com/user-attachments/assets/b21659a3-ff70-46ff-86b0-7a965b48197a)
+
+At General Section Provide the Description
+
+![image](https://github.com/user-attachments/assets/e0c5db89-597c-439e-91e1-7722bd4d5467)
+
+
+At Definition, We need to select the Pipeline Script 
+
+![image](https://github.com/user-attachments/assets/f9b35819-0b40-4d71-9678-949d35a4cd3e)
+
+
+
+Here's an example of a simple declarative pipeline: Syntax
+
+pipeline{
+
+agent any
+
+stages{
+
+Stage ('Clone'){
+
+steps{
+
+// write code
+}
+}
+
+Stage ('Build'){
+steps{
+
+// write code
+}
+// write code
+
+}
+
+Stage ('Test'){
+
+steps{
+
+// write code
+}
+// write code
+
+}
+Stage ('Execute test casea and get the results'){
+
+steps{
+
+// write code
+}
+// write code
+
+}
+
+Stage ('Generated Artifact'){
+
+steps{
+
+// write code
+}
+// write code
+
+}
+
+Stage ('Deploy'){
+
+steps{
+
+// write code
+}
+// write code
+
+}
+
+// write code
+
+}
+
+}
+
+Please try to create one pipeline job in jenkinsfile and execute the below Declarative pipeline example:;
+
+
+pipeline {
+
+   agent any
+
+    stages {
+        stage('Clone') {
+            steps {
+                git branch: 'main', url: 'https://github.com/srinfotech7358/spring-petclinic.git'
+            }
+        }
+        
+          stage('Build') {
+            steps {
+               bat 'mvn clean install'
+            }
+        }
+          stage('Test') {
+            steps {
+               bat 'mvn test'
+            }
+        }
+          
+    }
+}
+
+
+Plugins::
+===============
+
+Plugins in Jenkins are essential components that extend its core functionality, allowing you to customize Jenkins to meet specific CI/CD needs. Jenkins has a vast plugin ecosystem that supports building, deploying, and automating software projects across various platforms and tools
+
+Install Plugins in Jenkins::
+==============================
+
+Step-by-Step:
+Log in to Jenkins as an administrator.
+
+Navigate to Manage Jenkins (usually on the left sidebar).
+
+Click on Manage Plugins.
+
+(Image reference from Jenkins documentation)
+
+Go to the Available tab.
+
+Use the search box to find the plugin you want.
+
+Check the box next to the plugin name.
+
+Click:
+
+Pipeline: Stage View::
+=================
+
+Pipeline: Stage View Plugin in Jenkins
+The Pipeline: Stage View plugin is a visualization tool in Jenkins that allows users to see a graphical view of each stage in a pipeline. It provides a real-time and historical overview of pipeline execution per stage, making it easier to debug, monitor, and analyze performance.
+
+
+Click the Build Now and we can triggered the pipeline
+
+![image](https://github.com/user-attachments/assets/4e211efb-fafe-4598-b29c-bb4bd5d488f2)
+
+
+
+![image](https://github.com/user-attachments/assets/04315f1c-44ff-4078-952b-38320fec68c8)
+
+
+Success all the stages & Steps
+
+
+![image](https://github.com/user-attachments/assets/318c9d53-56fc-4815-9205-74d4dac0bf28)
+
+
+Key elements in the declarative pipeline:::
+======================================
+pipeline: This is the top-level structure.
+
+agent: Specifies where the pipeline will run, such as on any available agent, a specific node, or a Docker container.
+
+stages: Defines the different steps or stages in the pipeline (e.g., Build, Test, Deploy).
+
+steps: Commands to be executed in each stage.
+
