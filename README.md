@@ -2268,3 +2268,147 @@ Both declarative and scripted pipelines are stored as Jenkinsfiles, which you pl
 
 ![image](https://github.com/user-attachments/assets/edd96e0c-ac4d-438e-8a5b-97ae99ed1fda)
 
+
+
+
+03/07/2025::
+==================
+
+
+Pipeline as Code::
+==================
+Both declarative and scripted pipelines are stored as Jenkinsfiles, which you place in your source code repository. This allows you to version control your pipeline and keep it aligned with your application code.
+
+Declarative pipeline with Jenkinsfile::
+===============================
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone') {
+            steps {
+                git branch: 'main', url: 'git@github.com:parasa7358/spring-petclinic.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'mvn package'
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        stage('Test Results Reports') {
+            steps {
+                junit 'target/surefire-reports/*.xml'
+            }
+        }
+        
+        stage('Artifacts') {
+            steps {
+                archiveArtifacts artifacts: 'target/*.war', followSymlinks: false
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+
+
+This pipeline:::
+
+1 Checks out the source code from your Git repository.
+2. Builds the project using Maven.
+3.Runs unit tests.
+4.Deploys the application using a custom script.
+
+JOb creation::
+
+![image](https://github.com/user-attachments/assets/dacaf03a-5557-44ce-88ba-0b230ed061cb)
+
+Branches to build
+
+![image](https://github.com/user-attachments/assets/64065ba7-534e-4771-a667-00d5f64e5a4b)
+
+Script Path::: This path is Jenkinsfiles where we maintained in github source code level
+
+![image](https://github.com/user-attachments/assets/3b4783f0-c613-45d1-81a7-00712a79f5ad)
+
+
+Scripted pipeline with Jenkinsfile::
+===============================
+
+
+node{
+
+    stage('clone'){
+        git branch: 'main', url: 'https://github.com/srinfotechbatch2/spring-petclinic.git'
+
+    }
+
+     stage('build'){
+
+        bat 'mvn clean install'
+    }
+
+     stage('Test'){
+      bat 'mvn test'
+        
+    }
+     stage('Artifacts'){
+     archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
+        
+    }
+     stage('generated test reports'){
+    junit 'target/surefire-reports/*.xml'
+        
+    }
+}
+
+
+
+![image](https://github.com/user-attachments/assets/90db8ef7-ded5-473a-bb1c-78fcd7c68f2f)
+
+
+github sourcecode jenkinsfile 
+
+![image](https://github.com/user-attachments/assets/44f93ca7-1d95-4efb-afad-cc262de61dbe)
+
+
+
+Tomcat Web Server: Introduction
+===============
+
+Apache Tomcat is an open-source web server and servlet container developed by the Apache Software Foundation. It is primarily used to serve Java applications and is one of the most popular servlet containers in the world.
+
+Tomcat is an essential tool for anyone working with Java web applications. It provides a simple, reliable platform for deploying and managing Java Servlets and JSPs and is widely used in both development and production environments. Its ease of use, combined with powerful features and flexibility, makes it an ideal choice for many developers working on Java-based web applications.
+
+Apache Tomcat is an open-source web server and servlet container that is primarily used to serve Java-based web applications. It implements several Java EE (Enterprise Edition) specifications, such as Java Servlet, JavaServer Pages (JSP), and WebSocket, among others. Tomcat is often used to run Java applications on the web because it's lightweight, easy to configure, and widely supported.
+
+Here are some key points about Tomcat:
+
+1. **Servlet Container**: Tomcat is a servlet container, meaning it manages the lifecycle of Java Servlets, which are small Java programs that run on a web server.
+  
+2. **JSP Support**: Tomcat also supports JavaServer Pages (JSP), a technology that allows for embedding Java code within HTML pages.
+
+3. **Configuration**: It’s highly configurable through XML files, like `server.xml` for server settings, `web.xml` for application settings, and others.
+
+4. **Lightweight**: Unlike full-fledged application servers like WildFly (formerly JBoss) or GlassFish, Tomcat is primarily a servlet and JSP container, which makes it lighter and easier to deploy for simpler Java web applications.
+
+5. **Performance**: It’s known for good performance in handling static content, making it a popular choice for Java web developers.
+
+
+
+Integrate Tomcat  with Jenkins::
+==============================
+
+
+![image](https://github.com/user-attachments/assets/7e336e86-1278-4a6b-bea8-8c77a5c062dc)
+
