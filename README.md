@@ -2325,8 +2325,11 @@ pipeline {
 This pipeline:::
 
 1 Checks out the source code from your Git repository.
+
 2. Builds the project using Maven.
+   
 3.Runs unit tests.
+
 4.Deploys the application using a custom script.
 
 JOb creation::
