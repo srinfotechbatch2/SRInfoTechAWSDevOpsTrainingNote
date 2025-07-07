@@ -2,7 +2,8 @@
 # SRInfoTechAWSDevOpsTrainingNote
 
 
-I know the topics like everything 
+I know the topics like everything, i like this topics
+ 
 
 08/06/2025_Demo::
 ================
