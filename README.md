@@ -2,7 +2,7 @@
 # SRInfoTechAWSDevOpsTrainingNote
 
 
-
+I know the topics like everything 
 
 08/06/2025_Demo::
 ================
