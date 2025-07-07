@@ -2,7 +2,8 @@
 # SRInfoTechAWSDevOpsTrainingNote
 
 
-I know the topics like everything 
+I know the topics like everything, i like this topics
+ 
 
 i think it was un reel
 
