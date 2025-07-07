@@ -2,8 +2,15 @@
 # SRInfoTechAWSDevOpsTrainingNote
 
 
+<<<<<<< HEAD
 I know the topics like everything 
 i think it is super
+=======
+I know the topics like everything, i like this topics
+ 
+
+i think it was un reel
+>>>>>>> 4583af44c48e922cfeba61745c0f74b2ee573421
 
 08/06/2025_Demo::
 ================
