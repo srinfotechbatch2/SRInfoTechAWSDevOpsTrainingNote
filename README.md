@@ -2889,9 +2889,9 @@ https://gist.github.com/dmancloud/0abf6ad0cb16e1bce2e907f457c8fce9
 
 default U/P ---admin/admin
 
+default port number:: 9000
 
-![image](https://github.com/user-attachments/assets/f248e676-0498-4286-b7b0-43f78bddabd2)
-
+Server URL: URL to your SonarQube instance (e.g., http://localhost:9000). and default port is 9000
 
 To integrate SonarQube with Jenkins, you need to ensure that Jenkins can communicate with your SonarQube server to perform static code analysis during your CI/CD pipeline. This will allow you to analyze your code quality and get reports from SonarQube as part of your build process.
 
