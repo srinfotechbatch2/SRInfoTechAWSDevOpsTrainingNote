@@ -2852,3 +2852,60 @@ Onlinebookstore::
     }
 }
 
+
+
+10/07/2025::
+==============
+
+
+Introduction to SonarQube::
+================================
+
+SonarQube is an open-source platform developed by SonarSource that is used for continuous inspection of code quality. It helps developers and development teams identify bugs, code smells, vulnerabilities, and duplication in their codebases across multiple programming languages.
+
+Key Features of SonarQube
+Static Code Analysis
+SonarQube analyzes source code without executing it, detecting issues like:
+
+Bugs
+
+Vulnerabilities
+
+Code smells (bad design or coding practices)
+
+Duplications
+
+Technical debt
+
+
+Sonarqube Integrate With Jenkins::
+==================================
+
+<img width="1852" height="758" alt="image" src="https://github.com/user-attachments/assets/cfe5963b-e3af-42e4-bdf4-a5825c65f72c" />
+
+Sonarqube installed link::
+
+https://gist.github.com/dmancloud/0abf6ad0cb16e1bce2e907f457c8fce9
+
+default U/P ---admin/admin
+
+
+![image](https://github.com/user-attachments/assets/f248e676-0498-4286-b7b0-43f78bddabd2)
+
+
+To integrate SonarQube with Jenkins, you need to ensure that Jenkins can communicate with your SonarQube server to perform static code analysis during your CI/CD pipeline. This will allow you to analyze your code quality and get reports from SonarQube as part of your build process.
+
+Here's how you can integrate SonarQube with Jenkins:please follow below steps
+
+1. Install the SonarQube Plugin in Jenkins
+Before you start, ensure that you have the SonarQube Scanner Plugin installed in Jenkins:
+
+Go to Jenkins Dashboard.
+Click on Manage Jenkins → Plugins.
+Go to the Available tab, and search for SonarQube Scanner.
+Install it and restart Jenkins.
+
+2. Configure SonarQube in Jenkins
+Next, you need to configure SonarQube on Jenkins so it can communicate with your SonarQube server.
+
+
