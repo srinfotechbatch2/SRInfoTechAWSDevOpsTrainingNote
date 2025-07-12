@@ -3386,9 +3386,9 @@ Artifactory supports multiple programming languages and platforms, making it a u
 AWS (Amazon Web Services)::
 ========================
 
-NOTE::
-==========
-Please go thorow the AWS recorded session, to create the AWS Free tier account , let me know if you guys facing any issues
+Create AWS Free tier Account::
+====================================
+Please go throw the recorded video session and follow the steps to create the free tier AWS account.Let me know if anyone facing any issues.
 
 Amazon Web Services (AWS) is a comprehensive and widely adopted cloud platform offered by Amazon. It provides a broad set of services to help organizations and individuals build and scale applications, manage data, and process workloads in the cloud. AWS is designed to provide flexible, scalable, and cost-effective solutions for computing, storage, networking, machine learning, and much more.
 
